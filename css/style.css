@@ -1,19 +1,24 @@
 body{
+	position: absolute;
 	background: #2b2f38;
-}
-.r{
-
+	top:0vh;
+	left:0vw;
+	right: 0vw;
 }
 .r>div{
+	width: 100vw;
 	padding: 12% 2% 12% 2%;
+
 
 }
 .r>div>a{
+
 	position: absolute;
-	left:15vh;
-	top:30vh;
+	left:2vh;
+	top:4vh;
 	text-decoration: none;
 	color:black;
+	
 }
 .r>div>a:hover{
 	text-decoration: none;
@@ -21,16 +26,43 @@ body{
 	text-shadow: 0px 0px 1.5px #ffffff, 0px 0px 1.5px #ffffff;
 	transition: 0.5s;
 }
+.r>div>a>h2{
+	position: absolute;
+	top:18vh;
+	left:0vh;
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+.r>div>a>h2:hover{
+	text-decoration: none;
+	color:floralwhite;
+	text-shadow: 0px 0px 1.5px #ffffff, 0px 0px 1.5px #ffffff;
+	transition: 0.5s;
+}
+.r>div>a>div{
+	box-shadow: 8px 8px 6px -5px #000033;
+	transition:0.5;
+}
+.r>div>a>div>img{
+	width: 300px;
+	height: 168px;
+}
+.r>div>a>div:hover{
+	box-shadow: 10px 10px 6px -1px #000033;
+}
+
 #con{
 	position: absolute;
 	top: 20vh;
 	height: 150vh;
+	width: 100vw;
 	visibility: hidden;
 	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	left:8vh;
 
 }
-.col{
+.col{width: 100vw;
 	padding: 0% 10% 0% 10%;
 	font-size:25px;
 }
@@ -41,6 +73,7 @@ body{
 #nav1{
     position: absolute;
 	top:0vh;
+	left: 0vw;
 	width:100vw;
 	height:0vh;
 	background: rgba(0,0,128, 0.5);
@@ -79,6 +112,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	top:0vh;
+	left: 0vw;
 	color:#A9A9A9;
 }
 header>div>div>div>h2{
@@ -112,7 +146,7 @@ header>div>div>div>h2:hover{
 	color: #a9a9a9;
 	top:60vh;
 	left: 13vh;
-	width: 350px;
+	width: 35vw;
 }
 .sub{
 	position: absolute;
@@ -153,8 +187,8 @@ header>div>div>div>h2:hover{
 	width: 100vw;
 	height: 60vh;
 	top:100vh;
+	left: 0vw;
 	color:#A9A9A9;
-	right: 5vh;
 	}
 #foot>div>div>div>a{
 	color: #A9A9A9;
@@ -179,8 +213,8 @@ header>div>div>div>h2:hover{
 	position:absolute;
 	width: 100vw;
     height: 100vh;
-    left:0px;
-    top:0px;
+    left:0vw;
+    top:0vh;
 }
 h3:hover{
 	color:floralwhite;
@@ -195,7 +229,7 @@ h3:hover{
 	height:2px;
 	top:3vh;
 	background-color:white;
-	left:95vw;
+	left:93vw;
 	transform-origin:0% 0%;
 	transition: 0.5s;
 }
@@ -206,7 +240,7 @@ h3:hover{
 	height:2px;
 	background-color:white;
 	top:4.2vh;
-	left:95vw;
+	left:93vw;
 }
 #s3{
 	position: absolute;
@@ -214,7 +248,7 @@ h3:hover{
 	height:2px;
 	background-color:white;
 	top:5.4vh;
-	left:95vw;
+	left:93vw;
 	transform-origin:0% 0%;
 	transition: 0.5s;
 }
