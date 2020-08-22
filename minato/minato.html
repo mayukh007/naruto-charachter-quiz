@@ -8,9 +8,38 @@
 	 <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="../css/narutostyle.css">
 	 <script src = "../narutoscript.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script>
+	 	var i = 1;
+	 	var j = 1;
+	 	$(document).ready(function(){
+	 		
+	 		$("#submit").click(function(){
+	 			if(!$("input[name='Question"+j+"']:checked").val()){
+	 				alert("enter a value");
+	 				return;
+	 			}else{
+	 				$("#submit").prop("disabled", true);
+	 				j++;
+	 				$("#next").prop("disabled", false);
+	 			}
+	 		});
+	 		$("#next").click(function(){
+	 			$(".QQ-"+i).fadeOut(1000);
+	 			$(".QQ-"+(++i)).fadeIn(1500);
+	 			$("#next").prop("disabled", true);
+	 			$("#submit").prop("disabled", false);
+	 			if(i >5){
+	 				$(".fact").fadeIn(1500);
+	 				$("#next").hide();
+	 				$("#submit").hide();
+	 			}
+	 		});
+	 	});
+	 </script>
 </head>
 <body>
-	<img src = "../images/minato.png"/>
+	<img src = "../images/minato1.jpg"/>
 	<header id="h">
 		<div class = "container">
 			<div class = "row">
@@ -18,6 +47,190 @@
 			</div>
 		</div>
 	</header>
+	<div class = "container fact">
+		<img src="../images/itachi fact1.png">-->
+		<div class ="row">
+			<div class = " col-sm-6">
+				<h2> CONGTRATS YOU HAVE COMPLETED THE QUIZ</h2>
+				<p>Here is as a reward for completing the quiz you are presented with a little known fact about Itachi a gift</p>
+				<br>
+				<p>In Itachi: shinden novels, Itachi's girlfriend was revealed to be Izumi Uchiha another Uchiha clan member who was the first to die in the Uchiha massacre.
+
+                However, in an attempt for farewell, Itachi used his Tsukuyomi to let her live the life with him in the genjutsu dream world as she couldn’t in real life.
+            </p>
+			</div>
+		</div>
+	</div>
+	<div class= "container score">
+		<div class = "row">
+			<div class="col-sm-6">
+				<p class = "sc">score : <span id = "sc">0</span></p>
+				<p class = "cr">Correct Answers : <span id = "cr">0d</span></p>
+			</div>
+		</div>
+	</div>
+
+	<div class = "quiz">
+	<div class = "container QQ-5">
+		<div class = "ro r1">
+			<div class = "col-sm-6">
+				<h2>Question 5</h2>
+				<p class ="Qeust font-weight-bold">At what age did itachi graduated from Academy?</p>
+				<form>
+					<div class = "btn-grp" id = "Q5">
+					<div class = "custom-control custom-radio">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="10" id ="op1" name="Question5">
+						<label for="op1" class = "custom-control-label" ><b>10</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value = "7" id ="op2" name="Question5">
+						<label for="op2" class = "custom-control-label" ><b>7</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="13" id ="op3" name="Question5">
+						<label for="op3" class = "custom-control-label" ><b>13</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value = "11" id ="op4" name="Question5">
+						<label for="op4" class = "custom-control-label" ><b>11</b></label>
+					</div>
+				</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+		<div class =" container QQ-4">
+		<div class = "row r1">
+			<div class = "col-sm-6">
+				<h2>Question 4</h2>
+				<p class ="Qeust font-weight-bold">which of the following abilities did itachis mangekyo sharingan had?</p>
+				<form>
+					<div class = "btn-grp" id = "Q4">
+					<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Kamui" id ="op5" name="Question4">
+						<label for="op5" class = "custom-control-label" ><b>Kamui</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Kotoamatukami" id ="op6" name="Question4">
+						<label for="op6" class = "custom-control-label" ><b>Kotoamatsukami</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Amaterasu" id ="op7" name="Question4">
+						<label for="op7" class = "custom-control-label" ><b>Amaterasu & Tsukuyomi</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Limbo" id ="op8" name="Question4">
+						<label for="op8" class = "custom-control-label" ><b>Limbo</b></label>
+					</div>
+				</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+	<div class = "container QQ-3">
+		<div class = "row r1">
+			<div class = "col-sm-6">
+				<h2>Question 3</h2>
+				<p class ="Qeust font-weight-bold">When Itachi mascared uchiha clan what was his age?</p>
+				<form>
+					<div class = "btn-grp" id = "Q3">
+					<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="21" id ="op9" name="Question3">
+						<label for="op9" class = "custom-control-label" ><b>21</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="17" id ="op10" name="Question3">
+						<label for="op10" class = "custom-control-label" ><b>17</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="19" id ="op11" name="Question3">
+						<label for="op11" class = "custom-control-label" ><b>19</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="14" id ="op12" name="Question3">
+						<label for="op12" class = "custom-control-label" ><b>14</b></label>
+					</div>
+				</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+	<div class = "container QQ-2">
+		<div class = "row r1">
+			<div class = "col-sm-6">
+				<h2>Question 2</h2>
+				<p class ="Qeust font-weight-bold">which famous sealing blade did Itachi's susanoo weiled?</p>
+				<form>
+					<div class = "btn-grp" id = "Q2">
+					<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Samehada" id ="op13" name="Question2">
+						<label for="op13" class = "custom-control-label" ><b>Samehada</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Executionar's Blade" id ="op14" name="Question2">
+						<label for="op14" class = "custom-control-label" ><b>Executionar's Blade</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value = "Totska Blade"id ="op15" name="Question2">
+						<label for="op15" class = "custom-control-label" ><b>Totska Blade</b></label>
+					</div>
+						
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="Nuibari" id ="op16" name="Question2">
+						<label for="op16" class = "custom-control-label" ><b>Nuibari</b></label>
+					</div>
+				</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+	<div class = "container QQ-1">
+		<div class = "row ">
+			<div class = "col-sm-6">
+				<h2>Question 1</h2>
+				<p class ="Qeust font-weight-bold">what was the pattern of Itachi's mangekyo?</p>
+				<form>
+					<div class = "btn-grp" id = "Q1">
+					<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value="a" id ="op17" name="Question1">
+						<label for="op17" class = "custom-control-label" ><img src= "../images/madara sharingan.png" style="width: 30px; height :30px;"></label>
+					</div>
+						<br>
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value = "b" id ="op18" name="Question1">
+						<label for="op18" class = "custom-control-label" ><img src= "../images/obito ms.jpg" style="width: 30px; height :30px;"></label>
+					</div>
+						<br>
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value ="c" id ="op19" name="Question1">
+						<label for="op19" class = "custom-control-label" ><img src= "../images/itachi ms.jpg" style="width: 30px; height :30px;"></label>
+					</div>
+						<br>
+						<div class = "custom-control custom-radio">
+						<input type="radio" class ="custom-control-input" value = "d" id ="op20" name="Question1">
+						<label for="op20" class = "custom-control-label" ><img src= "../images/shishui ms.jpg" style="width: 30px; height :30px;"></label>
+					</div>
+				</div>
+			    </form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class = "container form-btn">
+	<button class = "btn btn-primary bt1" onclick ="getNext()" id = "submit">submit</button>
+     <button class = "btn btn-secondary b2" id="next" disabled>Next <i class ="fa fa-arrow-right"></i></button>
+</div>
 		<nav id = "nav1">
 	    <div class = "a1">
 		<a id = "a1" style = "top: 20vh" onclick = "getNav()" href = "../index.html">home</i></div>

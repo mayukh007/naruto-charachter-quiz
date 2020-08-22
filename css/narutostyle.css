@@ -119,3 +119,217 @@ h3:hover{
 .b{
 	border-bottom: :1px ridge black;
 }
+.QQ-5{
+	visibility: visible;
+	position: absolute;
+	width: 45vw;
+	height: 45vh;
+	border-radius: 20px;
+	left:10vw;
+	top:20vh;
+	color: #FFFFFF;
+	background: #2b2f38;
+	display: none;
+	box-shadow: 8px 8px 6px -5px #000000;
+	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.QQ-5:hover{
+	box-shadow: 8px 8px 6px -2px #000000;
+	transition: 0.5s;
+}
+.QQ-4
+{
+	visibility: visible;
+	position: absolute;
+	width: 45vw;
+	height: 45vh;
+	border-radius: 20px;
+	left:10vw;
+	top:20vh;
+	color: #FFFFFF;
+	background: #2b2f38;
+	display: none;
+	box-shadow: 8px 8px 6px -5px #000000;
+	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.QQ-3{
+	visibility: visible;
+	position: absolute;
+	width: 45vw;
+	height: 45vh;
+	border-radius: 20px;
+	left:10vw;
+	top:20vh;
+	color: #FFFFFF;
+	background: #2b2f38;
+	display: none;
+	box-shadow: 8px 8px 6px -5px #000000;
+	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.QQ-2{
+	visibility: visible;
+	position: absolute;
+	width: 45vw;
+	height: 45vh;
+	border-radius: 20px;
+	left:10vw;
+	top:20vh;
+	color: #FFFFFF;
+	background: #2b2f38;
+	display: none;
+	box-shadow: 8px 8px 6px -5px #000000;
+	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.QQ-1{
+	visibility: visible;
+	position: absolute;
+	width: 45vw;
+	height: 45vh;
+	border-radius: 20px;
+	left:10vw;
+	top:20vh;
+	color: #FFFFFF;
+	background: #2b2f38;
+	display: block;
+	box-shadow: 8px 8px 6px -5px #000000;
+	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+input,label{
+	left: 10vh;
+	width: 200px;
+	height: 30px;
+}
+.r1{
+	left: 20vh;
+	margin-top: 20px;
+}
+/*first h2 p */
+.QQ-1>div>div>p{
+	width:500px;
+	margin-left: 10px;
+
+}
+.QQ-1>div>div>h2{
+	width:500px;
+	margin-left: 10px;
+}
+.QQ-1>input,label{
+	left: 10vh;
+	width: 200px;
+	height: 25px;
+}
+/*----------------*/
+/*second h2 p */
+.QQ-2>div>div>p{
+	width:500px;
+	margin-left: 10px;
+}
+.QQ-2>div>div>h2{
+	width:500px;
+	margin-left: 10px;
+}
+/*----------------*/
+/*third h2 p */
+
+.QQ-3>div>div>p{
+	width:500px;
+	margin-left: 10px;
+}
+.QQ-3>div>div>h2{
+	width:500px;
+	margin-left: 10px;
+}
+/*----------------*/
+/*fourth h2 p */
+
+.QQ-4>div>div>p{
+	width:500px;
+	margin-left: 10px;
+}
+.QQ-4>div>div>h2{
+	width:500px;
+	margin-left: 10px;
+}
+/*----------------*/
+
+/*fifth h2 p */
+
+.QQ-5>div>div>p{
+	width:500px;
+	margin-left: 10px;
+}
+.QQ-5>div>div>h2{
+	width:500px;
+	margin-left: 10px;
+}
+	
+/*----------------*/
+/*itachi fact css*/
+.fact{
+	visibility: visible;
+	position: absolute;
+	width: 60vw;
+	height: 60vh;
+	border-radius: 20px;
+	left:6vw;
+	top:20vh;
+	color: #FFFFFF;
+	background: #2b2f38;
+	display: none;
+	box-shadow: 8px 8px 6px -5px #000000;
+	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+}
+.fact>div>div>h2{
+	width:55vw;
+	color: rgb(218, 189, 117);
+	text-shadow: 1px 1px 3px #ffffff;
+	margin-left: 10px;
+	margin-top: 18px;
+	font-weight: bold;
+}
+.fact>div>div>p{
+	width:500px;
+	font-size: 19px;
+	margin-left: 10px;
+}
+.fact>img{
+	left: 0px;
+	width: 60vw; 
+	height: 60vh;
+	border-radius: 20px;
+}
+/*---------------*/
+/* submit and next buttons*/
+.form-btn{
+	position: absolute;
+	max-width: 20vw;
+	top:66vh;
+	left:40vw;
+}
+#submit{
+	background: #2b2f38;
+	text-decoration: none;
+	border: 1px solid #2b2f38;
+}
+/*score*/
+.sc,.cr{
+	position: absolute;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+	top:80vh;
+	left:10vh;
+}
+.cr{
+	left:40vh;
+	}
+#sc {
+	color: #A9A9A9;
+	left:25vh ;
+}
+#cr{
+	color: #A9A9A9;
+	left: 60vh;
+}
+/*-----------*/

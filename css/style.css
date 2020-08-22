@@ -1,15 +1,26 @@
 body{
-	position: absolute;
 	background: #2b2f38;
-	top:0vh;
-	left:0vw;
-	right: 0vw;
+	
 }
 .r>div{
-	width: 100vw;
+	position: relative;
 	padding: 12% 2% 12% 2%;
-
-
+	
+}
+.r:nth-child(3){
+	border:0px;
+}
+.r>div>a>h2{
+	position: absolute;
+	top:35vh;
+	left: 7vh;
+	width: 40vh;
+	text-decoration: none;
+	font-weight: bold;
+}
+.r>div>a>h2:hover{
+	text-decoration: none;
+	text-shadow: 0px 0px 1px #ffffff, 0px 0px 1px #ffffff;
 }
 .r>div>a{
 
@@ -17,39 +28,34 @@ body{
 	left:2vh;
 	top:4vh;
 	text-decoration: none;
-	color:black;
-	
+	color:#000000;	
 }
 .r>div>a:hover{
 	text-decoration: none;
-	color:floralwhite;
+	color:#FFFFFF;
 	text-shadow: 0px 0px 1.5px #ffffff, 0px 0px 1.5px #ffffff;
-	transition: 0.5s;
-}
-.r>div>a>h2{
-	position: absolute;
-	top:18vh;
-	left:0vh;
-	text-decoration: none;
-	color:black;
-	font-weight: bold;
-}
-.r>div>a>h2:hover{
-	text-decoration: none;
-	color:floralwhite;
-	text-shadow: 0px 0px 1.5px #ffffff, 0px 0px 1.5px #ffffff;
-	transition: 0.5s;
 }
 .r>div>a>div{
-	box-shadow: 8px 8px 6px -5px #000033;
-	transition:0.5;
+	position: absolute;
+	top:5vh;
+	box-shadow: 8px 8px 6px -5px #000011;
+	transition:0.1s;
 }
 .r>div>a>div>img{
 	width: 300px;
 	height: 168px;
 }
 .r>div>a>div:hover{
-	box-shadow: 10px 10px 6px -1px #000033;
+	box-shadow: 10px 10px 6px -2px #000000;
+	transition:0.5s;
+}
+.r>div>a>div:hover:after{
+	transition: 0.5s;
+}
+.r>div>a>div:active{
+	box-shadow: 8px 8px 6px -5px #000011;
+	transition:0.1s;
+
 }
 
 #con{
@@ -62,7 +68,8 @@ body{
 	left:8vh;
 
 }
-.col{width: 100vw;
+.col{
+	width: 100vw;
 	padding: 0% 10% 0% 10%;
 	font-size:25px;
 }
@@ -118,6 +125,7 @@ body{
 header>div>div>div>h2{
 	position: absolute;
 	top:30vh;
+	left:2vw;
 }
 header>div>div>div>h2:hover{
 	color:#ffffff;
@@ -185,7 +193,7 @@ header>div>div>div>h2:hover{
 	background-color: #2b2f38;
 	position: absolute;
 	width: 100vw;
-	height: 60vh;
+	height: 70vh;
 	top:100vh;
 	left: 0vw;
 	color:#A9A9A9;
@@ -252,13 +260,16 @@ h3:hover{
 	transform-origin:0% 0%;
 	transition: 0.5s;
 }
-#h21{
+.head1{
 	position: absolute;
 	font-weight: bold;
 	font-size:35px;
 	top:4vh;
+	
+	left:3vw;
 	color: #A9A9A9;
 	transition: 0.5s;
+	
 }
 
 

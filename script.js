@@ -25,7 +25,7 @@ function getNav(){
 function getQ(){
 	document.getElementById("h").style.visibility = "hidden";
 	document.getElementById("con").style.visibility="visible";
-	document.getElementById("foot").style.top = "180vh";
+	document.getElementById("foot").style.top = "160vh";
 }
 function getH(){
 	document.getElementById("h").style.visibility = "visible";
