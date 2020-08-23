@@ -119,68 +119,7 @@ h3:hover{
 .b{
 	border-bottom: :1px ridge black;
 }
-.QQ-5{
-	visibility: visible;
-	position: absolute;
-	width: 45vw;
-	height: 45vh;
-	border-radius: 20px;
-	left:10vw;
-	top:20vh;
-	color: #FFFFFF;
-	background: #2b2f38;
-	display: none;
-	box-shadow: 8px 8px 6px -5px #000000;
-	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-.QQ-5:hover{
-	box-shadow: 8px 8px 6px -2px #000000;
-	transition: 0.5s;
-}
-.QQ-4
-{
-	visibility: visible;
-	position: absolute;
-	width: 45vw;
-	height: 45vh;
-	border-radius: 20px;
-	left:10vw;
-	top:20vh;
-	color: #FFFFFF;
-	background: #2b2f38;
-	display: none;
-	box-shadow: 8px 8px 6px -5px #000000;
-	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-.QQ-3{
-	visibility: visible;
-	position: absolute;
-	width: 45vw;
-	height: 45vh;
-	border-radius: 20px;
-	left:10vw;
-	top:20vh;
-	color: #FFFFFF;
-	background: #2b2f38;
-	display: none;
-	box-shadow: 8px 8px 6px -5px #000000;
-	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-.QQ-2{
-	visibility: visible;
-	position: absolute;
-	width: 45vw;
-	height: 45vh;
-	border-radius: 20px;
-	left:10vw;
-	top:20vh;
-	color: #FFFFFF;
-	background: #2b2f38;
-	display: none;
-	box-shadow: 8px 8px 6px -5px #000000;
-	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-.QQ-1{
+.QQ-1,.QQ-2,.QQ-3,.QQ-4,.QQ-5{
 	visibility: visible;
 	position: absolute;
 	width: 45vw;
@@ -194,6 +133,11 @@ h3:hover{
 	box-shadow: 8px 8px 6px -5px #000000;
 	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
+
+.QQ-2,.QQ-2,.QQ-3,.QQ-4,.QQ-5{
+	display: none;
+}
+
 input,label{
 	left: 10vh;
 	width: 200px;
@@ -282,7 +226,7 @@ input,label{
 }
 .fact>div>div>h2{
 	width:55vw;
-	color: rgb(218, 189, 117);
+	color: #2b2f38;
 	text-shadow: 1px 1px 3px #ffffff;
 	margin-left: 10px;
 	margin-top: 18px;
@@ -310,6 +254,10 @@ input,label{
 #submit{
 	background: #2b2f38;
 	text-decoration: none;
+	border: 1px solid #2b2f38;
+}
+#next{
+	background:#2b2f38;
 	border: 1px solid #2b2f38;
 }
 /*score*/

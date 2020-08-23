@@ -32,7 +32,7 @@ function getNext(){
 	let a = k;
 	while(a<= 20 && a>=17){
 		if(document.getElementById("op"+a).checked == true){
-			if(document.getElementById("op"+a).value == 'c'){
+			if(document.getElementById("op"+a).value == 'naruto'){
 				count = count+100;
 				getcount(count);
 				k =k-4;
@@ -48,7 +48,7 @@ function getNext(){
 	}
 	while(a<= 16 && a>=13){
 	if(document.getElementById("op"+a).checked == true){
-			if(document.getElementById("op"+a).value == 'Totska Blade'){
+			if(document.getElementById("op"+a).value == 'Rasengan'){
 				count = count+100;
 				getcount(count);
 				k =k-4;
@@ -63,7 +63,7 @@ function getNext(){
 		 }
 	 while(a<= 12 && a>=9){
 	if(document.getElementById("op"+a).checked == true){
-			if(document.getElementById("op"+a).value == '14'){
+			if(document.getElementById("op"+a).value == 'Flying Raijin'){
 				count = count+100;
 				getcount(count);
 				k =k-4;
@@ -78,7 +78,7 @@ function getNext(){
 		 }
 	 while(a<= 8 && a>=5){
 	if(document.getElementById("op"+a).checked == true){
-			if(document.getElementById("op"+a).value == 'Amaterasu'){
+			if(document.getElementById("op"+a).value == 'yellow'){
 				count = count+100;
 				getcount(count);
 				k =k-4;
@@ -93,7 +93,7 @@ function getNext(){
 		 }
 	while(a<= 4 && a>=1){
 	if(document.getElementById("op"+a).checked == true){
-			if(document.getElementById("op"+a).value == '7'){
+			if(document.getElementById("op"+a).value == '10'){
 				count = count+100;
 				getcount(count);
 				k =k-4;

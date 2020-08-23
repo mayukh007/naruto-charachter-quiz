@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	 <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="../css/narutostyle.css">
-	 <!-- <script src = "../narutoscript.js"></script>-->
+	 <script src = "../narutoscript.js"></script>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 	 	var i = 1;
@@ -19,6 +19,7 @@
 	 				alert("enter a value");
 	 				return;
 	 			}else{
+	 				$("input[name='Question"+j+"']").attr("disabled", true);
 	 				$("#submit").prop("disabled", true);
 	 				j++;
 	 				$("#next").prop("disabled", false);
@@ -28,7 +29,7 @@
 	 			$(".QQ-"+i).fadeOut(1000);
 	 			$(".QQ-"+(++i)).fadeIn(1500);
 	 			$("#next").prop("disabled", true);
-	 			$("#submit").prop("disabled", false);
+	 			
 	 			if(i >5){
 	 				$(".fact").fadeIn(1500);
 	 				$("#next").hide();
@@ -84,17 +85,17 @@
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value = "7" id ="op2" name="Question5">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value = "7" id ="op2" name="Question5">
 						<label for="op2" class = "custom-control-label" ><b>7</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="13" id ="op3" name="Question5">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="13" id ="op3" name="Question5">
 						<label for="op3" class = "custom-control-label" ><b>13</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value = "11" id ="op4" name="Question5">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value = "11" id ="op4" name="Question5">
 						<label for="op4" class = "custom-control-label" ><b>11</b></label>
 					</div>
 				</div>
@@ -110,22 +111,22 @@
 				<form>
 					<div class = "btn-grp" id = "Q4">
 					<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Kamui" id ="op5" name="Question4">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Kamui" id ="op5" name="Question4">
 						<label for="op5" class = "custom-control-label" ><b>Kamui</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Kotoamatukami" id ="op6" name="Question4">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Kotoamatukami" id ="op6" name="Question4">
 						<label for="op6" class = "custom-control-label" ><b>Kotoamatsukami</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Amaterasu" id ="op7" name="Question4">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Amaterasu" id ="op7" name="Question4">
 						<label for="op7" class = "custom-control-label" ><b>Amaterasu & Tsukuyomi</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Limbo" id ="op8" name="Question4">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Limbo" id ="op8" name="Question4">
 						<label for="op8" class = "custom-control-label" ><b>Limbo</b></label>
 					</div>
 				</div>
@@ -141,22 +142,22 @@
 				<form>
 					<div class = "btn-grp" id = "Q3">
 					<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="21" id ="op9" name="Question3">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="21" id ="op9" name="Question3">
 						<label for="op9" class = "custom-control-label" ><b>21</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="17" id ="op10" name="Question3">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="17" id ="op10" name="Question3">
 						<label for="op10" class = "custom-control-label" ><b>17</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="19" id ="op11" name="Question3">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="19" id ="op11" name="Question3">
 						<label for="op11" class = "custom-control-label" ><b>19</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="14" id ="op12" name="Question3">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="14" id ="op12" name="Question3">
 						<label for="op12" class = "custom-control-label" ><b>14</b></label>
 					</div>
 				</div>
@@ -172,22 +173,22 @@
 				<form>
 					<div class = "btn-grp" id = "Q2">
 					<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Samehada" id ="op13" name="Question2">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Samehada" id ="op13" name="Question2">
 						<label for="op13" class = "custom-control-label" ><b>Samehada</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Executionar's Blade" id ="op14" name="Question2">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Executionar's Blade" id ="op14" name="Question2">
 						<label for="op14" class = "custom-control-label" ><b>Executionar's Blade</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value = "Totska Blade"id ="op15" name="Question2">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value = "Totska Blade"id ="op15" name="Question2">
 						<label for="op15" class = "custom-control-label" ><b>Totska Blade</b></label>
 					</div>
 						
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="Nuibari" id ="op16" name="Question2">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="Nuibari" id ="op16" name="Question2">
 						<label for="op16" class = "custom-control-label" ><b>Nuibari</b></label>
 					</div>
 				</div>
@@ -203,23 +204,23 @@
 				<form>
 					<div class = "btn-grp" id = "Q1">
 					<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value="a" id ="op17" name="Question1">
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value="a" id ="op17" name="Question1">
 						<label for="op17" class = "custom-control-label" ><img src= "../images/madara sharingan.png" style="width: 30px; height :30px;"></label>
 					</div>
 						<br>
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value = "b" id ="op18" name="Question1">
+						<input type="radio"  onclick = "getsubmit()" class ="custom-control-input" value = "b" id ="op18" name="Question1">
 						<label for="op18" class = "custom-control-label" ><img src= "../images/obito ms.jpg" style="width: 30px; height :30px;"></label>
 					</div>
 						<br>
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value ="c" id ="op19" name="Question1">
-						<label for="op19" class = "custom-control-label" ><img src= "../images/itachi ms.jpg" style="width: 30px; height :30px;"></label>
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value ="c" id ="op19" name="Question1">
+						<label for="op19"  class = "custom-control-label" ><img src= "../images/itachi ms.jpg" style="width: 30px; height :30px;"></label>
 					</div>
 						<br>
 						<div class = "custom-control custom-radio">
-						<input type="radio" class ="custom-control-input" value = "d" id ="op20" name="Question1">
-						<label for="op20" class = "custom-control-label" ><img src= "../images/shishui ms.jpg" style="width: 30px; height :30px;"></label>
+						<input type="radio" onclick = "getsubmit()" class ="custom-control-input" value = "d" id ="op20" name="Question1">
+						<label for="op20"  class = "custom-control-label" ><img src= "../images/shishui ms.jpg" style="width: 30px; height :30px;"></label>
 					</div>
 				</div>
 			    </form>
@@ -228,7 +229,7 @@
 	</div>
 </div>
 <div class = "container form-btn">
-	<button class = "btn btn-primary bt1" onclick ="getNext()" id = "submit">submit</button>
+	<button class = "btn btn-primary bt1" onclick ="getNext()" id = "submit" disabled>submit</button>
      <button class = "btn btn-secondary b2" id="next" disabled="">Next <i class ="fa fa-arrow-right"></i></button>
 </div>
 		<nav id = "nav1">
